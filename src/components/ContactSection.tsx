@@ -3,7 +3,7 @@ import { Instagram, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-24">
+    <section id="contato" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -12,7 +12,7 @@ const ContactSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="max-w-md mx-auto text-center"
         >
-          <p className="text-sm uppercase tracking-[0.25em] text-primary font-medium mb-3">
+          <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">
             Fale Comigo
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">

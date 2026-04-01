@@ -17,7 +17,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-          className="mb-4 inline-flex items-center gap-2 rounded-full border border-secondary-foreground/15 bg-secondary-foreground/10 px-5 py-2 text-xs uppercase tracking-[0.25em] text-secondary-foreground/80 backdrop-blur-md"
+          className="mb-5 inline-flex items-center gap-2 rounded-full border-2 border-primary/50 bg-primary/20 px-7 py-3 text-sm uppercase tracking-[0.25em] text-secondary-foreground font-semibold backdrop-blur-md shadow-elevated"
         >
           🇬🇧 Programa Ganhando o Mundo · 2024
         </motion.div>
@@ -29,7 +29,7 @@ const HeroSection = () => {
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-secondary-foreground leading-tight"
         >
           Meu Intercâmbio na{" "}
-          <span className="text-primary">Inglaterra</span>
+          <span className="text-secondary-foreground drop-shadow-lg">Inglaterra</span>
         </motion.h1>
 
         <motion.p

@@ -30,14 +30,14 @@ const AboutProgram = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-14"
         >
-          <p className="text-sm uppercase tracking-[0.25em] text-primary font-medium mb-3">
+          <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">
             Sobre o Programa
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
             Ganhando o Mundo
           </h2>
           <p className="mt-5 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
-            O <strong>Ganhando o Mundo</strong> é um programa de intercâmbio que oferece a estudantes 
+            O <strong className="text-foreground">Ganhando o Mundo</strong> é um programa de intercâmbio que oferece a estudantes 
             da rede pública a oportunidade de viver uma experiência acadêmica e cultural no exterior. 
             Durante meses, os selecionados vivem em outro país, frequentam escolas locais e mergulham 
             em uma nova cultura.

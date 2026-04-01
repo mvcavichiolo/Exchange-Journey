@@ -3,7 +3,7 @@ import { processSteps } from "@/data/exchangeData";
 
 const ProcessSection = () => {
   return (
-    <section id="processo" className="py-24">
+    <section id="processo" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -12,7 +12,7 @@ const ProcessSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <p className="text-sm uppercase tracking-[0.25em] text-primary font-medium mb-3">
+          <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">
             Passo a Passo
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
@@ -32,7 +32,7 @@ const ProcessSection = () => {
               transition={{ delay: i * 0.12, duration: 0.7, ease: "easeOut" }}
               className="relative mb-12 pl-16 md:pl-0 md:w-1/2 md:odd:pr-10 md:even:pl-10 md:odd:text-right md:even:ml-auto"
             >
-              <div className="absolute left-4 top-1 h-5 w-5 rounded-full border-2 border-primary bg-background md:left-auto md:right-auto md:odd:right-[-10px] md:even:left-[-10px]" />
+              <div className="absolute left-4 top-1 h-5 w-5 rounded-full border-2 border-primary bg-card md:left-auto md:right-auto md:odd:right-[-10px] md:even:left-[-10px]" />
 
               <div className="rounded-2xl border bg-card p-6 shadow-card hover:shadow-elevated transition-shadow duration-500">
                 <span className="text-xs font-bold text-primary uppercase tracking-wider">

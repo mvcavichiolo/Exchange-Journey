@@ -20,7 +20,7 @@ const ThanksSection = () => {
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
             Essa experiência só foi possível graças ao apoio da minha família, dos professores que 
-            me incentivaram, do programa <strong>Ganhando o Mundo</strong> e da minha família hospedeira 
+            me incentivaram, do programa <strong className="text-foreground">Ganhando o Mundo</strong> e da minha família hospedeira 
             na Inglaterra. Cada pessoa que cruzou meu caminho nessa jornada deixou uma marca que 
             carrego para sempre.
           </p>

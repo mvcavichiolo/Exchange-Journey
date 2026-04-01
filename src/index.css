@@ -6,50 +6,58 @@
 
 @layer base {
   :root {
-    --background: 36 50% 95%;
-    --foreground: 30 30% 15%;
+    /* Bege quente suave — não branco puro */
+    --background: 32 35% 93%;
+    /* Cinza escuro quente para textos principais */
+    --foreground: 30 10% 17%;
 
-    --card: 36 40% 92%;
-    --card-foreground: 30 30% 15%;
+    /* Card branco real para contraste com fundo bege */
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 17%;
 
-    --popover: 36 50% 95%;
-    --popover-foreground: 30 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 17%;
 
-    --primary: 38 45% 60%;
-    --primary-foreground: 30 30% 12%;
+    /* Dourado mais forte e legível */
+    --primary: 38 50% 52%;
+    --primary-foreground: 30 20% 14%;
 
-    --secondary: 30 30% 15%;
-    --secondary-foreground: 36 40% 90%;
+    /* Header/footer marrom acinzentado sofisticado */
+    --secondary: 30 14% 19%;
+    --secondary-foreground: 36 30% 92%;
 
-    --muted: 36 25% 88%;
-    --muted-foreground: 30 15% 45%;
+    /* Muted — variação de fundo para seções alternadas */
+    --muted: 32 28% 88%;
+    --muted-foreground: 30 18% 35%;
 
-    --accent: 36 35% 90%;
-    --accent-foreground: 30 30% 15%;
+    /* Accent — seções alternadas */
+    --accent: 33 30% 90%;
+    --accent-foreground: 30 10% 17%;
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 20% 82%;
-    --input: 36 20% 82%;
-    --ring: 38 45% 60%;
+    /* Bordas mais visíveis */
+    --border: 33 22% 80%;
+    --input: 33 22% 80%;
+    --ring: 38 50% 52%;
 
     --radius: 0.75rem;
 
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Inter', system-ui, sans-serif;
 
-    --shadow-card: 0 4px 24px -4px hsl(30 30% 15% / 0.06);
-    --shadow-elevated: 0 16px 48px -12px hsl(30 30% 15% / 0.12);
+    --shadow-card: 0 4px 24px -4px hsl(30 15% 20% / 0.08);
+    --shadow-elevated: 0 16px 48px -12px hsl(30 15% 20% / 0.15);
 
-    --sidebar-background: 36 40% 94%;
-    --sidebar-foreground: 30 20% 30%;
-    --sidebar-primary: 30 30% 15%;
-    --sidebar-primary-foreground: 36 40% 92%;
-    --sidebar-accent: 36 30% 90%;
-    --sidebar-accent-foreground: 30 30% 15%;
-    --sidebar-border: 36 20% 85%;
-    --sidebar-ring: 38 45% 60%;
+    --sidebar-background: 32 28% 90%;
+    --sidebar-foreground: 30 18% 28%;
+    --sidebar-primary: 30 14% 19%;
+    --sidebar-primary-foreground: 36 30% 92%;
+    --sidebar-accent: 33 25% 88%;
+    --sidebar-accent-foreground: 30 10% 17%;
+    --sidebar-border: 33 20% 82%;
+    --sidebar-ring: 38 50% 52%;
   }
 }
 

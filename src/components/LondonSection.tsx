@@ -12,13 +12,13 @@ const LondonSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-14"
         >
-          <p className="text-sm uppercase tracking-[0.25em] text-primary font-medium mb-3">
+          <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-3">
             Destaque
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold">
             Londres
           </h2>
-          <p className="mt-5 max-w-xl mx-auto text-secondary-foreground/60 leading-relaxed">
+          <p className="mt-5 max-w-xl mx-auto text-secondary-foreground/70 leading-relaxed">
             A capital britânica foi sem dúvida o ponto alto do intercâmbio. Cada visita revelava uma nova camada desta cidade extraordinária.
           </p>
         </motion.div>
@@ -46,7 +46,7 @@ const LondonSection = () => {
                   <h3 className="font-serif text-lg font-bold text-secondary-foreground">
                     {item.title}
                   </h3>
-                  <p className="mt-1 text-sm text-secondary-foreground/60 line-clamp-2">
+                  <p className="mt-1 text-sm text-secondary-foreground/70 line-clamp-2">
                     {item.description}
                   </p>
                 </div>

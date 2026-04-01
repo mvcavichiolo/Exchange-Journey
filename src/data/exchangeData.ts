@@ -7,12 +7,12 @@ import museum from "@/assets/gallery/british-museum.jpg";
 import camden from "@/assets/gallery/camden-market.jpg";
 import stonehenge from "@/assets/gallery/stonehenge.jpg";
 
-export interface GalleryPhoto {
+export interface Album {
   id: string;
-  src: string;
   title: string;
   description: string;
-  instagramLink?: string;
+  cover: string;
+  photos: string[];
 }
 
 export interface GalleryCategory {
@@ -20,7 +20,7 @@ export interface GalleryCategory {
   title: string;
   description: string;
   icon: string;
-  photos: GalleryPhoto[];
+  albums: Album[];
 }
 
 export interface ProcessStep {
@@ -43,9 +43,21 @@ export const galleryCategories: GalleryCategory[] = [
     title: "Família Hospedeira",
     description: "Momentos com a família que me acolheu na Inglaterra",
     icon: "Heart",
-    photos: [
-      { id: "f1", src: pub, title: "Jantar em Família", description: "Uma noite acolhedora com minha host family no pub do bairro." },
-      { id: "f2", src: countryside, title: "Passeio no Campo", description: "Fim de semana explorando o interior inglês com a família." },
+    albums: [
+      {
+        id: "f-jantar",
+        title: "Jantar em Família",
+        description: "Noites acolhedoras com minha host family, compartilhando refeições e histórias no pub do bairro.",
+        cover: pub,
+        photos: [pub, countryside, camden],
+      },
+      {
+        id: "f-passeio",
+        title: "Passeio no Campo",
+        description: "Fins de semana explorando o interior inglês com a família hospedeira.",
+        cover: countryside,
+        photos: [countryside, pub, stonehenge],
+      },
     ],
   },
   {
@@ -53,9 +65,21 @@ export const galleryCategories: GalleryCategory[] = [
     title: "Escola",
     description: "Dia a dia na escola britânica",
     icon: "GraduationCap",
-    photos: [
-      { id: "e1", src: oxford, title: "Campus da Escola", description: "Arquitetura clássica do campus onde estudei durante o intercâmbio." },
-      { id: "e2", src: museum, title: "Visita Escolar", description: "Saída pedagógica ao British Museum com a turma." },
+    albums: [
+      {
+        id: "e-campus",
+        title: "Campus da Escola",
+        description: "A arquitetura clássica do campus onde estudei durante o intercâmbio. Cada corredor contava uma história centenária.",
+        cover: oxford,
+        photos: [oxford, museum, countryside],
+      },
+      {
+        id: "e-atividades",
+        title: "Atividades Escolares",
+        description: "Saídas pedagógicas, eventos e a rotina acadêmica britânica.",
+        cover: museum,
+        photos: [museum, oxford, bigben],
+      },
     ],
   },
   {
@@ -63,10 +87,21 @@ export const galleryCategories: GalleryCategory[] = [
     title: "Viagens",
     description: "Explorando além da cidade",
     icon: "Compass",
-    photos: [
-      { id: "v1", src: stonehenge, title: "Stonehenge", description: "Visita ao misterioso círculo de pedras milenar em Wiltshire." },
-      { id: "v2", src: countryside, title: "Cotswolds", description: "Vilarejos pitorescos no coração da Inglaterra rural." },
-      { id: "v3", src: oxford, title: "Oxford", description: "Um dia nos famosos colleges da universidade mais antiga do mundo anglófono." },
+    albums: [
+      {
+        id: "v-stonehenge",
+        title: "Stonehenge",
+        description: "Visita ao misterioso círculo de pedras milenar em Wiltshire. Uma experiência única e surreal.",
+        cover: stonehenge,
+        photos: [stonehenge, countryside, oxford],
+      },
+      {
+        id: "v-cotswolds",
+        title: "Cotswolds & Oxford",
+        description: "Vilarejos pitorescos e os famosos colleges da universidade mais antiga do mundo anglófono.",
+        cover: oxford,
+        photos: [oxford, countryside, stonehenge, pub],
+      },
     ],
   },
   {
@@ -74,11 +109,21 @@ export const galleryCategories: GalleryCategory[] = [
     title: "Londres",
     description: "A capital que nunca para",
     icon: "MapPin",
-    photos: [
-      { id: "l1", src: bigben, title: "Big Ben", description: "O icônico relógio de Westminster ao entardecer." },
-      { id: "l2", src: towerBridge, title: "Tower Bridge", description: "A ponte mais famosa de Londres iluminada ao crepúsculo." },
-      { id: "l3", src: camden, title: "Camden Market", description: "O mercado mais vibrante e alternativo de Londres." },
-      { id: "l4", src: museum, title: "British Museum", description: "Arte e história mundial sob um teto de vidro impressionante." },
+    albums: [
+      {
+        id: "l-icones",
+        title: "Ícones de Londres",
+        description: "Big Ben, Tower Bridge e os cartões-postais mais fotografados da capital britânica.",
+        cover: bigben,
+        photos: [bigben, towerBridge, camden, museum],
+      },
+      {
+        id: "l-cultura",
+        title: "Cultura & Mercados",
+        description: "Camden Market, British Museum e a energia criativa que pulsa em cada esquina.",
+        cover: camden,
+        photos: [camden, museum, bigben, towerBridge],
+      },
     ],
   },
 ];
