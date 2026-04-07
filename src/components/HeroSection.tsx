@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/gallery/london-bigben.jpg";
 
 const HeroSection = () => {
   return (
     <section id="hero" className="relative h-[75vh] min-h-[520px] overflow-hidden">
       <img
-        src={heroBg}
+        src="https://ryeogbicfxcvtwkrnzel.supabase.co/storage/v1/object/public/Gallery/20251008_181521%20(1).jpg"
         alt="Londres ao entardecer"
         className="absolute inset-0 h-full w-full object-cover saturate-[0.85] contrast-[1.05]"
       />
@@ -19,7 +18,7 @@ const HeroSection = () => {
           transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
           className="mb-5 inline-flex items-center gap-2 rounded-full border-2 border-primary/50 bg-primary/20 px-7 py-3 text-sm uppercase tracking-[0.25em] text-secondary-foreground font-semibold backdrop-blur-md shadow-elevated"
         >
-          🇬🇧 Programa Ganhando o Mundo · 2024
+          🇬🇧 Programa Ganhando o Mundo · 2025
         </motion.div>
 
         <motion.h1

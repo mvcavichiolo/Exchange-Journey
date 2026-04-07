@@ -13,6 +13,7 @@ const iconMap: Record<string, React.ElementType> = {
 const GallerySection = () => {
   const [activeCategory, setActiveCategory] = useState(galleryCategories[0].id);
   const [selectedAlbum, setSelectedAlbum] = useState<Album | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
   const current = galleryCategories.find((c) => c.id === activeCategory)!;
 
@@ -112,13 +113,14 @@ const GallerySection = () => {
             {/* Left — Photos grid with scroll */}
             <div className="md:w-3/5 h-[300px] md:h-full overflow-y-auto p-4 border-r border-border/30">
               <div className="grid grid-cols-2 gap-3">
-                {selectedAlbum.photos.map((src, i) => (
-                  <div key={i} className="overflow-hidden rounded-xl">
+                {selectedAlbum.photos.map((photo, i) => (
+                  <div key={i} className="overflow-hidden rounded-xl cursor-pointer" onClick={() => setSelectedPhoto(photo.url)}>
                     <img
-                      src={src}
-                      alt={`${selectedAlbum.title} — foto ${i + 1}`}
+                      src={photo.url}
+                      alt={photo.description || `${selectedAlbum.title} — foto ${i + 1}`}
                       className="w-full aspect-square object-cover saturate-[0.85] contrast-[1.05] hover:scale-105 transition-transform duration-500"
                     />
+                    <p className="text-xs text-muted-foreground mt-2 px-2 text-center">{photo.description}</p>
                   </div>
                 ))}
               </div>
@@ -137,6 +139,39 @@ const GallerySection = () => {
               className="absolute top-3 right-3 z-10 rounded-full bg-card/80 backdrop-blur-sm p-2 text-foreground hover:bg-muted transition-colors duration-300"
             >
               <X size={18} />
+            </button>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Photo zoom modal */}
+      {selectedPhoto && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
+          onClick={() => setSelectedPhoto(null)}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="relative max-w-6xl max-h-[90vh] w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="text-center">
+              <img
+                src={selectedPhoto}
+                alt="Foto ampliada"
+                className="max-w-full max-h-[80vh] object-contain rounded-lg"
+              />
+              <p className="text-white mt-4 text-sm max-w-2xl mx-auto">
+                {selectedAlbum.photos.find(p => p.url === selectedPhoto)?.description}
+              </p>
+            </div>
+            <button
+              onClick={() => setSelectedPhoto(null)}
+              className="absolute top-4 right-4 z-10 rounded-full bg-white/20 backdrop-blur-sm p-3 text-white hover:bg-white/30 transition-colors duration-300"
+            >
+              <X size={24} />
             </button>
           </motion.div>
         </div>

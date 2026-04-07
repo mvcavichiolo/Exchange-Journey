@@ -20,9 +20,9 @@ const ThanksSection = () => {
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
             Essa experiência só foi possível graças ao apoio da minha família, dos professores que 
-            me incentivaram, do programa <strong className="text-foreground">Ganhando o Mundo</strong> e da minha família hospedeira 
+            me incentivaram, do programa <strong className="text-foreground">Ganhando o Mundo</strong> e da minha host family
             na Inglaterra. Cada pessoa que cruzou meu caminho nessa jornada deixou uma marca que 
-            carrego para sempre.
+            eu vou carregar para sempre.
           </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Um agradecimento especial à minha escola, que me preparou para esse desafio, e a todos 

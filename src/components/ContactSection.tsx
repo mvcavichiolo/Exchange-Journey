@@ -19,7 +19,7 @@ const ContactSection = () => {
             Contato
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            Quer saber mais sobre o intercâmbio ou tem alguma pergunta? Entre em contato!
+            Quer saber mais sobre o intercâmbio ou tem alguma pergunta? Estou à disposição!
           </p>
 
           <div className="mt-8 flex flex-col gap-4">
@@ -30,14 +30,7 @@ const ContactSection = () => {
               className="inline-flex items-center justify-center gap-3 rounded-2xl border bg-card px-6 py-4 text-foreground hover:bg-muted transition-all duration-300 shadow-card hover:shadow-elevated"
             >
               <Instagram size={20} className="text-primary" />
-              <span className="font-medium">@meu.instagram</span>
-            </a>
-            <a
-              href="mailto:contato@exemplo.com"
-              className="inline-flex items-center justify-center gap-3 rounded-2xl border bg-card px-6 py-4 text-foreground hover:bg-muted transition-all duration-300 shadow-card hover:shadow-elevated"
-            >
-              <Mail size={20} className="text-primary" />
-              <span className="font-medium">contato@exemplo.com</span>
+              <span className="font-medium">@mvcavichiolo</span>
             </a>
           </div>
         </motion.div>

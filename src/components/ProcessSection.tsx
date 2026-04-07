@@ -16,7 +16,7 @@ const ProcessSection = () => {
             Passo a Passo
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground">
-            O Processo de Seleção
+            Preparações
           </h2>
         </motion.div>
 

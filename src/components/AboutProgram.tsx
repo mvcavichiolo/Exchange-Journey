@@ -5,12 +5,12 @@ const features = [
   {
     icon: Globe,
     title: "Intercâmbio Cultural",
-    description: "Imersão total na cultura britânica, vivendo com família hospedeira e frequentando escola local.",
+    description: "Imersão total na nova cultura, vivendo com a host family e frequentando escola local.",
   },
   {
     icon: BookOpen,
     title: "Educação Internacional",
-    description: "Experiência no sistema educacional britânico com aulas regulares e atividades extracurriculares.",
+    description: "Experiência em um sistema educacional diferente com aulas regulares e atividades extracurriculares.",
   },
   {
     icon: Users,
@@ -38,8 +38,8 @@ const AboutProgram = () => {
           </h2>
           <p className="mt-5 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
             O <strong className="text-foreground">Ganhando o Mundo</strong> é um programa de intercâmbio que oferece a estudantes 
-            da rede pública a oportunidade de viver uma experiência acadêmica e cultural no exterior. 
-            Durante meses, os selecionados vivem em outro país, frequentam escolas locais e mergulham 
+            da rede pública do Paraná a oportunidade de viver uma experiência acadêmica e cultural no exterior. 
+            Durante meses, os selecionados vivem em outro país, frequentam instituições de ensino local e mergulham 
             em uma nova cultura.
           </p>
         </motion.div>

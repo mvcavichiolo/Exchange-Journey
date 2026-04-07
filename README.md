@@ -1,11 +1,11 @@
 # Exchange Journey
 
-Site em **React** que conta a experiência de um intercâmbio na **Inglaterra** (Programa **Ganhando o Mundo**, 2024). É uma landing page em uma única rota (`/`), com seções sobre o programa, o processo de seleção, vivência, galeria de fotos, agradecimentos e contato.
+Site em **React** que conta a experiência de um intercâmbio na **Inglaterra** (Programa **Ganhando o Mundo**, 2025). É uma landing page em uma única rota (`/`), com seções sobre o programa, o processo de seleção, vivência, galeria de fotos, agradecimentos e contato.
 
 ## Para que serve
 
 - **Portfólio narrativo** da jornada de intercâmbio (hero, sobre o programa, passos do processo, experiência).
-- **Galeria** organizada por categorias (família hospedeira, escola, turismo etc.), com dados em `src/data/exchangeData.ts`.
+- **Galeria** organizada por categorias (host family, escola, viagens etc.), com dados em `src/data/exchangeData.ts`.
 - Interface construída com **Vite**, **TypeScript**, **Tailwind CSS** e componentes no estilo **shadcn/ui** (Radix, animações com Framer Motion).
 
 Não há backend nem variáveis de ambiente obrigatórias: o conteúdo é estático no front-end.
