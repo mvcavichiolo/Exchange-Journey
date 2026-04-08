@@ -1,12 +1,3 @@
-import bigben from "@/assets/gallery/london-bigben.jpg";
-import oxford from "@/assets/gallery/oxford-university.jpg";
-import pub from "@/assets/gallery/english-pub.jpg";
-import towerBridge from "@/assets/gallery/tower-bridge.jpg";
-import countryside from "@/assets/gallery/countryside.jpg";
-import museum from "@/assets/gallery/british-museum.jpg";
-import camden from "@/assets/gallery/camden-market.jpg";
-import stonehenge from "@/assets/gallery/stonehenge.jpg";
-
 // URLs das imagens do Supabase com descrições
 const hostFamilyPhotos = [
   { url: "https://ryeogbicfxcvtwkrnzel.supabase.co/storage/v1/object/public/Gallery/IMG-20251227-WA0023.jpg", description: "Jantar especial com minha host family" },
@@ -18,8 +9,7 @@ const hostFamilyPhotos = [
 const schoolPhotos = [
   { url: "https://ryeogbicfxcvtwkrnzel.supabase.co/storage/v1/object/public/Gallery/20250915_101200.jpg", description: "Campus da Coastland College" },
   { url: "https://ryeogbicfxcvtwkrnzel.supabase.co/storage/v1/object/public/Gallery/20250915_102543.jpg", description: "Aula prática no museu" },
-  { url: "https://ryeogbicfxcvtwkrnzel.supabase.co/storage/v1/object/public/Gallery/20251015_152118.jpg", description: "Laboratório de ciências" },
-  { url: countryside, description: "Atividade ao ar livre" }
+  { url: "https://ryeogbicfxcvtwkrnzel.supabase.co/storage/v1/object/public/Gallery/20251015_152118.jpg", description: "Laboratório de ciências" }
 ];
 
 const travelPhotos = [
@@ -334,11 +324,4 @@ export const galleryCategories: GalleryCategory[] = [
       },
     ],
   },
-];
-
-export const londonHighlights = [
-  { title: "Big Ben & Westminster", description: "O coração político e histórico de Londres, com a icônica torre do relógio.", image: bigben },
-  { title: "Tower Bridge", description: "A ponte levadiça vitoriana que é um dos cartões-postais mais fotografados do mundo.", image: towerBridge },
-  { title: "Camden Market", description: "Cultura alternativa, street food internacional e energia criativa.", image: camden },
-  { title: "British Museum", description: "Milhares de anos de história humana em um único lugar — e a entrada é gratuita.", image: museum },
 ];

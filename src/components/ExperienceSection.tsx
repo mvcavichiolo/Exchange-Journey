@@ -1,9 +1,5 @@
 import { motion } from "framer-motion";
 import { Home, GraduationCap, Building2, Calendar } from "lucide-react";
-import countryside from "@/assets/gallery/countryside.jpg";
-import oxford from "@/assets/gallery/oxford-university.jpg";
-import pub from "@/assets/gallery/english-pub.jpg";
-import stonehenge from "@/assets/gallery/stonehenge.jpg";
 
 const journalEntries = [
   {
